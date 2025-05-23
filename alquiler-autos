@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoRent - Alquiler de Autos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 0.5em 2em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    .cars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+
+    .car {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1em;
+      width: 250px;
+      text-align: center;
+    }
+
+    .car img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    form {
+      background-color: white;
+      padding: 2em;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoRent</h1>
+    <p>Alquiler de autos rápido, seguro y confiable</p>
+  </header>
+
+  <nav>
+    <a href="#autos">Autos</a>
+    <a href="#reserva">Reservar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="autos">
+    <h2>Autos disponibles</h2>
+    <div class="cars">
+      <div class="car">
+        <img src="https://via.placeholder.com/250x150?text=Fiat+Cronos" alt="Fiat Cronos">
+        <h3>Fiat Cronos</h3>
+        <p>Desde $20.000/día</p>
+      </div>
+      <div class="car">
+        <img src="https://via.placeholder.com/250x150?text=Toyota+Etios" alt="Toyota Etios">
+        <h3>Toyota Etios</h3>
+        <p>Desde $18.000/día</p>
+      </div>
+      <div class="car">
+        <img src="https://via.placeholder.com/250x150?text=Chevrolet+Onix" alt="Chevrolet Onix">
+        <h3>Chevrolet Onix</h3>
+        <p>Desde $19.500/día</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserva">
+    <h2>Reservar un auto</h2>
+    <form>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="auto">Selecciona un auto</label>
+      <select id="auto" name="auto" required>
+        <option value="">-- Elige un auto --</option>
+        <option value="cronos">Fiat Cronos</option>
+        <option value="etios">Toyota Etios</option>
+        <option value="onix">Chevrolet Onix</option>
+      </select>
+
+      <label for="fecha">Fecha de retiro</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <button type="submit">Reservar ahora</button>
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 Teléfono: +54 11 1234 5678</p>
+    <p>📧 Email: contacto@autorent.com</p>
+    <p>📍 Dirección: Av. Siempre Viva 123, Buenos Aires</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoRent. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
+
